@@ -1,0 +1,102 @@
+/* BeautySalon Admin — minimal overrides on Tabler */
+.page {
+  min-height: 100vh;
+}
+
+.navbar-vertical {
+  width: 16rem;
+}
+
+.chart-lg {
+  min-height: 18rem;
+}
+
+.chart-sm {
+  min-height: 10rem;
+}
+
+.badge-notification {
+  position: absolute;
+  top: 0.15rem;
+  right: -0.15rem;
+  min-width: 1.1rem;
+  height: 1.1rem;
+  padding: 0 0.25rem;
+  font-size: 0.65rem;
+  line-height: 1.1rem;
+}
+
+.admin-datatable .table-sort {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.admin-datatable .table-sort:hover {
+  color: var(--tblr-primary);
+}
+
+.admin-datatable .table-sort.asc::after,
+.admin-datatable .table-sort.desc::after {
+  display: inline-block;
+  margin-left: 0.35rem;
+  font-size: 0.75rem;
+  opacity: 0.7;
+}
+
+.admin-datatable .table-sort.asc::after {
+  content: "▲";
+}
+
+.admin-datatable .table-sort.desc::after {
+  content: "▼";
+}
+
+.admin-loading-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(2px);
+}
+
+#adminConfirmModal .modal-content {
+  border: 0;
+  box-shadow: var(--tblr-box-shadow-lg);
+}
+
+#adminConfirmModal .modal-body {
+  padding-top: 1.5rem;
+}
+
+#adminConfirmModal .modal-footer {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.admin-loading-spinner {
+  text-align: center;
+}
+
+.admin-login-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8fafc 0%, #eef2ff 100%);
+}
+
+.admin-login-page .card {
+  border: 0;
+}
+
+.form-label.required::after {
+  content: " *";
+  color: var(--tblr-danger);
+}
+
+@media (min-width: 992px) {
+  .page-wrapper {
+    margin-left: 0;
+  }
+}
